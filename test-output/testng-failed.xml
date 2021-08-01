@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="2">
+  <test thread-count="5" parallel="tests" name="Test1(failed)" verbose="2">
+    <classes>
+      <class name="com.test.GoogleTest">
+        <methods>
+          <include name="mailLinkTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.test.GoogleTest -->
+      <class name="com.test.ExceptionTimeoutTest">
+        <methods>
+          <include name="MainTest"/>
+        </methods>
+      </class> <!-- com.test.ExceptionTimeoutTest -->
+      <class name="com.test.TestngFeatures">
+        <methods>
+          <include name="firstTest"/>
+          <include name="secondTest"/>
+          <include name="thirdTest"/>
+        </methods>
+      </class> <!-- com.test.TestngFeatures -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
